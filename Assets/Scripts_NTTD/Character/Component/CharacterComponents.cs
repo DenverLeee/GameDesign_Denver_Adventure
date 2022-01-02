@@ -21,16 +21,16 @@ public class CharacterComponents : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         character = GetComponent<Character>();
-        characterWeapon = GetComponent<CharacterWeapon>();
+        // characterWeapon = GetComponent<CharacterWeapon>();
         characterMovement = GetComponent<CharacterMovement>();
-        animator = GetComponent<Animator>();
-        levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
+        // animator = GetComponent<Animator>();
+        // levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
     }
 
     protected virtual void Update()
     {
-        canMove = levelManager.canMove;
-        canShoot = levelManager.canShoot;
+        // canMove = levelManager.canMove;
+        // canShoot = levelManager.canShoot;
         HandleAbility();
     }
 

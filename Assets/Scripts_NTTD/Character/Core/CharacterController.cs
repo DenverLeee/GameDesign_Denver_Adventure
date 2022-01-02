@@ -17,7 +17,7 @@ public class CharacterController : MonoBehaviour
 
     private void Awake()
     {
-        _dialogueController = GameObject.Find("DialogueManager").GetComponent<DialogueController>();
+        // _dialogueController = GameObject.Find("DialogueManager").GetComponent<DialogueController>();
     }
 
     // Start is called before the first frame update
@@ -30,22 +30,17 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        Recoil();
-        isDialog = _dialogueController.isDialogRunning;
-        if (isDialog)
-            SetMovement(Vector2.zero);
-        if (NormalMovement) MoveCharacter();
+        // isDialog = _dialogueController.isDialogRunning;
+        // if (isDialog)
+        //     SetMovement(Vector2.zero);
+        if (NormalMovement) 
+            MoveCharacter();
     }
 
     private void MoveCharacter()
     {
         var currentMovePosition = myRigidbody2D.position + CurrentMovement * Time.fixedDeltaTime;
         myRigidbody2D.MovePosition(currentMovePosition);
-    }
-
-    public void ApplyRecoil(Vector2 recoilDirection, float recoilForce)
-    {
-        recoilMovement = recoilDirection.normalized * recoilForce;
     }
 
     // Extra Move in case we need it    
@@ -58,10 +53,5 @@ public class CharacterController : MonoBehaviour
     public void SetMovement(Vector2 newPosition)
     {
         CurrentMovement = newPosition;
-    }
-
-    private void Recoil()
-    {
-        if (recoilMovement.magnitude > 0.1f) myRigidbody2D.AddForce(recoilMovement);
     }
 }

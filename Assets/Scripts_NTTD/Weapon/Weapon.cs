@@ -69,7 +69,7 @@ public class Weapon : MonoBehaviour
 
     public void StopWeapon()
     {
-        if (useRecoil) controller.ApplyRecoil(Vector2.one, 0f);
+        
     }
 
     private void StartShooting()
@@ -97,28 +97,13 @@ public class Weapon : MonoBehaviour
     public virtual void RequestShot()
     {
         if (!CanShoot) return;
-
-        if (useRecoil)
-        {
-            Recoil();
-        }
-        
         
         // Debug.Log("True");
         WeaponAmmo.ConsumeAmmo();   
         
 	}
 
-    private void Recoil()
-    {
-        if (WeaponOwner != null)
-        {
-            if (WeaponOwner.GetComponent<CharacterFlip>().FacingRight)
-                controller.ApplyRecoil(Vector2.left, recoilForce);
-            else
-                controller.ApplyRecoil(Vector2.right, recoilForce);
-        }
-    }
+
 
     public void WeaponCanShoot()
     {
