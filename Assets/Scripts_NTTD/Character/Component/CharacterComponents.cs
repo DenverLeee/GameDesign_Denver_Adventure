@@ -23,7 +23,7 @@ public class CharacterComponents : MonoBehaviour
         character = GetComponent<Character>();
         // characterWeapon = GetComponent<CharacterWeapon>();
         characterMovement = GetComponent<CharacterMovement>();
-        // animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         // levelManager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
     }
 
@@ -38,7 +38,7 @@ public class CharacterComponents : MonoBehaviour
     // Main method. Here we put the logic of each ability
     protected virtual void HandleAbility()
     {
-        if (!canMove || !canShoot) return;
+        // if (!canMove || !canShoot) return;
         InternalInput();
         HandleInput();
     }
@@ -55,7 +55,7 @@ public class CharacterComponents : MonoBehaviour
         if (character.CharacterType == Character.CharacterTypes.Player)
         {
             horizontalInput = Input.GetAxisRaw("Horizontal");
-            verticalInput = Input.GetAxisRaw("Vertical");
+            // verticalInput = Input.GetAxisRaw("Vertical");
         }
     }
 }

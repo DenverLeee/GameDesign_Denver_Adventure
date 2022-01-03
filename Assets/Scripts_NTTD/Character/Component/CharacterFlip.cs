@@ -33,8 +33,6 @@ public class CharacterFlip : CharacterComponents
         if (controller.CurrentMovement.normalized.magnitude > threshold)
         {
             if (controller.CurrentMovement.normalized.x > 0) {
-
-            
                 FaceDirection(1);
             }
             else if (controller.CurrentMovement.normalized.x < 0)
@@ -45,8 +43,6 @@ public class CharacterFlip : CharacterComponents
             {
                 FaceDirection((int)transform.localScale.x);
             }
-            
-            
         }
     }
 
