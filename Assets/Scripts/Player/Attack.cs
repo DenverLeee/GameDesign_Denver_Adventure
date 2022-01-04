@@ -19,13 +19,7 @@ public class Attack : MonoBehaviour
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 	}
 
-	// Start is called before the first frame update
-	void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+	// Update is called once per frame
     void Update()
     {
 		if (Input.GetKeyDown(KeyCode.X) && canAttack)
@@ -63,7 +57,8 @@ public class Attack : MonoBehaviour
 					dmgValue = -dmgValue;
 				}
 				collidersEnemies[i].gameObject.SendMessage("ApplyDamage", dmgValue);
-				// cam.GetComponent<CameraFollow>().ShakeCamera();
+				// TODO:Set a manager to manage this camshake
+				cam.GetComponent<CameraFollow>().ShakeCamera();
 			}
 		}
 	}
