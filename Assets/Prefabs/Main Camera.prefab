@@ -99,5 +99,5 @@ MonoBehaviour:
   FollowSpeed: 5
   Target: {fileID: 0}
   shakeDuration: 0
-  shakeAmount: 0.1
+  shakeAmount: 0.5
   decreaseFactor: 1

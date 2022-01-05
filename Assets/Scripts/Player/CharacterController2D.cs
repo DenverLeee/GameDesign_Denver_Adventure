@@ -321,7 +321,7 @@ public class CharacterController2D : MonoBehaviour
 
 	IEnumerator WaitToEndSliding()
 	{
-		yield return new WaitForSeconds(0.1f);
+		yield return new WaitForSeconds(0);
 		canDoubleJump = true;
 		isWallSliding = false;
 		animator.SetBool("IsWallSliding", false);
