@@ -23,14 +23,7 @@ public class DestructibleObject : MonoBehaviour
 	{
 		initialPosition = transform.position;
 	}
-
-	void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
+	void Update()
     {
 		if (life <= 0)
 		{
@@ -51,6 +44,7 @@ public class DestructibleObject : MonoBehaviour
 
 	public void ApplyDamage(float damage)
 	{
+		transform.GetComponent<Animator>().SetTrigger("Hit");
 		life -= 1;
 		shakeDuration = 0.1f;
 	}
