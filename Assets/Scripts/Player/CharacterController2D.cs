@@ -228,6 +228,8 @@ public class CharacterController2D : MonoBehaviour
 					m_WallCheck.localPosition = new Vector3(Mathf.Abs(m_WallCheck.localPosition.x), m_WallCheck.localPosition.y, 0);
 					canMove = false;
 				}
+				
+				
 				else if (dash && canDash)
 				{
 					isWallSliding = false;
@@ -238,6 +240,14 @@ public class CharacterController2D : MonoBehaviour
 					StartCoroutine(DashCooldown());
 				}
 			}
+			// else if (isWallSliding && m_Grounded)
+			// {
+			// 	isWallSliding = false;
+			// 	animator.SetBool("IsWallSliding", false);
+			// 	oldWallSlidding = false;
+			// 	m_WallCheck.localPosition = new Vector3(Mathf.Abs(m_WallCheck.localPosition.x), m_WallCheck.localPosition.y, 0);
+			// 	canDoubleJump = true;
+			// }
 			else if (isWallSliding && !m_IsWall && canCheck) 
 			{
 				isWallSliding = false;
@@ -246,6 +256,7 @@ public class CharacterController2D : MonoBehaviour
 				m_WallCheck.localPosition = new Vector3(Mathf.Abs(m_WallCheck.localPosition.x), m_WallCheck.localPosition.y, 0);
 				canDoubleJump = true;
 			}
+			
 		}
 	}
 
