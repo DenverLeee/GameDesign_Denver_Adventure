@@ -22,7 +22,7 @@ public class Attack : MonoBehaviour
 	// Update is called once per frame
     void Update()
     {
-		if (Input.GetKeyDown(KeyCode.X) && canAttack)
+		if (Input.GetKeyDown(KeyCode.J) && canAttack)
 		{
 			canAttack = false;
 			animator.SetBool("IsAttacking", true);
@@ -30,7 +30,7 @@ public class Attack : MonoBehaviour
 			StartCoroutine(AttackCooldown());
 		}
 
-		if (Input.GetKeyDown(KeyCode.V) && canAttack)
+		if (Input.GetKeyDown(KeyCode.L) && canAttack)
 		{
 			canAttack = false;
 			GameObject throwableWeapon = Instantiate(throwableObject, transform.position + new Vector3(transform.localScale.x * 0.5f,2f), Quaternion.identity) as GameObject; 
@@ -51,7 +51,7 @@ public class Attack : MonoBehaviour
 	//Set time between Range Attack
 	IEnumerator ThrowableAttackCooldown()
 	{
-		yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(0.7f);
 		canAttack = true;
 	}
 

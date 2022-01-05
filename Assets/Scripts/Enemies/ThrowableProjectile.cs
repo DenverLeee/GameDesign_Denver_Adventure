@@ -25,6 +25,7 @@ public class ThrowableProjectile : MonoBehaviour
 		}
 		else if ( owner != null && collision.gameObject != owner && collision.gameObject.tag == "Enemy" )
 		{
+			// collision.gameObject.GetComponent<Enemy>().ApplyDamage(2f);
 			collision.gameObject.SendMessage("ApplyDamage", Mathf.Sign(direction.x) * 2f);
 			Destroy(gameObject);
 		}
