@@ -37,7 +37,7 @@ public class Attack : MonoBehaviour
 			throwableWeapon.name = "ThrowableWeapon";
 		}
 	}
-
+    
 	IEnumerator AttackCooldown()
 	{
 		yield return new WaitForSeconds(0.25f);
