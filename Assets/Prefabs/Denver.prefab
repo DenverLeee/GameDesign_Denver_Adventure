@@ -4898,8 +4898,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3990263578170579373}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 1.15, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.187, y: 1.15, z: 0}
+  m_LocalScale: {x: 1.2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3996205233639541817}
   m_RootOrder: 2
@@ -9767,6 +9767,8 @@ GameObject:
   - component: {fileID: 4022158250278968259}
   - component: {fileID: 4008186258283302647}
   - component: {fileID: 3909126131892149947}
+  - component: {fileID: 7708924737473449465}
+  - component: {fileID: 601089400960859792}
   m_Layer: 1
   m_Name: Denver
   m_TagString: Player
@@ -10086,6 +10088,74 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!61 &7708924737473449465
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3990529826265483187}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.03796816, y: 1.348514}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 6.25, y: 3.4375}
+    newSize: {x: 2.9985716, y: 2.249375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1807394, y: 2.4463446}
+  m_EdgeRadius: 0
+--- !u!60 &601089400960859792
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3990529826265483187}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 6.25, y: 3.4375}
+    newSize: {x: 2.9985716, y: 2.249375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.875, y: 0}
+      - {x: 0.875, y: 2.1875}
+      - {x: 0.21628284, y: 2.6561134}
+      - {x: -0.07748556, y: 2.66574}
+      - {x: -0.20417929, y: 2.5614138}
+      - {x: -0.18919325, y: 2.2857878}
+      - {x: -0.5157213, y: 2.0463}
+      - {x: -0.6169286, y: 1.532267}
+      - {x: -0.7541237, y: 1.0356591}
+      - {x: -0.8511963, y: 0.68133295}
+      - {x: -0.9203043, y: 0.3938526}
+      - {x: -0.918911, y: 0.3837821}
+      - {x: -0.9190817, y: 0.13429463}
+      - {x: -0.5, y: 0}
+      - {x: 0, y: 0.75}
+      - {x: 0.125, y: 0.125}
+      - {x: 0.25, y: 0}
 --- !u!1 &3990714250617093317
 GameObject:
   m_ObjectHideFlags: 0
@@ -10111,7 +10181,7 @@ Transform:
   m_GameObject: {fileID: 3990714250617093317}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.21, y: 0.05, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3996205233639541817}
   m_RootOrder: 0
