@@ -18,9 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level-3.unity
     guid: 7de3e36929800544192d8d58f3ce72f6
   - enabled: 1
-    path: Assets/Scenes/CompleteGame.unity
-    guid: 7ccecd6751b393540a2fd7444ff739e6
+    path: Assets/Scenes/GameCompleted.unity
+    guid: 26c61245556559b46b9c2655cf928d70
   - enabled: 1
     path: Assets/Scenes/DeadMenu.unity
-    guid: d50dd8172f3711645b9896e9fe27bd0c
+    guid: 710e5e5505d4441479b60704e9eff52c
   m_configObjects: {}

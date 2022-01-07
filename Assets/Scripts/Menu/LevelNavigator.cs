@@ -11,6 +11,7 @@ public class LevelNavigator : MonoBehaviour
     private void Awake()
     {
         // reset menu components activity
+        Cursor.visible = true;
         if (!mainMenu || !levelMenu) return;
         mainMenu.SetActive(true);
         levelMenu.SetActive(false);
