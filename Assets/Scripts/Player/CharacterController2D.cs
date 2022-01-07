@@ -285,6 +285,7 @@ public class CharacterController2D : MonoBehaviour
 			if (life <= 0)
 			{
 				StartCoroutine(WaitToDead());
+				SceneManager.LoadScene(5);
 			}
 			else
 			{
