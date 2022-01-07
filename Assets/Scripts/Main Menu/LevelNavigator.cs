@@ -25,7 +25,6 @@ public class LevelNavigator : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("quitting");
         Application.Quit();
     }
 
