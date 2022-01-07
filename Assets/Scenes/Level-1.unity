@@ -9240,6 +9240,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3958670516831575953, guid: 231fa7251dd079d4bb503cdfaec3dafd, type: 3}
+      propertyPath: healhBar
+      value: 
+      objectReference: {fileID: 1291139997}
     - target: {fileID: 3959613380623392775, guid: 231fa7251dd079d4bb503cdfaec3dafd, type: 3}
       propertyPath: cam
       value: 
@@ -9403,6 +9407,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1291139997 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2603376388657124116, guid: 78e28e07c0c7b7e4a987c2906fd58bf1, type: 3}
+  m_PrefabInstance: {fileID: 1468706246}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1383558030
 GameObject:
   m_ObjectHideFlags: 0
@@ -10448,6 +10463,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUDCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2603376387683762188, guid: 78e28e07c0c7b7e4a987c2906fd58bf1, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2603376387683762191, guid: 78e28e07c0c7b7e4a987c2906fd58bf1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -10530,6 +10549,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603376387683762191, guid: 78e28e07c0c7b7e4a987c2906fd58bf1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603376388643763686, guid: 78e28e07c0c7b7e4a987c2906fd58bf1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 262
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603376388643763686, guid: 78e28e07c0c7b7e4a987c2906fd58bf1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603376388657124116, guid: 78e28e07c0c7b7e4a987c2906fd58bf1, type: 3}
+      propertyPath: m_Type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603376388657124116, guid: 78e28e07c0c7b7e4a987c2906fd58bf1, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603376388657124116, guid: 78e28e07c0c7b7e4a987c2906fd58bf1, type: 3}
+      propertyPath: m_FillMethod
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603376388657124116, guid: 78e28e07c0c7b7e4a987c2906fd58bf1, type: 3}
+      propertyPath: m_PreserveAspect
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2836929836120734140, guid: 78e28e07c0c7b7e4a987c2906fd58bf1, type: 3}
