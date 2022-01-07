@@ -285,7 +285,6 @@ public class CharacterController2D : MonoBehaviour
 			if (life <= 0)
 			{
 				StartCoroutine(WaitToDead());
-				SceneManager.LoadScene(5);
 			}
 			else
 			{
@@ -351,6 +350,7 @@ public class CharacterController2D : MonoBehaviour
 		yield return new WaitForSeconds(0.4f);
 		m_Rigidbody2D.velocity = new Vector2(0, m_Rigidbody2D.velocity.y);
 		yield return new WaitForSeconds(1.1f);
-		SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+		SceneManager.LoadScene(5);
+		// SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
 	}
 }
