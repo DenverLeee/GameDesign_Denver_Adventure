@@ -9813,6 +9813,7 @@ MonoBehaviour:
     m_Bits: 53
   m_GroundCheck: {fileID: 3993266122435021627}
   m_WallCheck: {fileID: 3995931085490673799}
+  healhBar: {fileID: 0}
   canDoubleJump: 0
   m_DashForce: 25
   life: 10
