@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using Unity.Mathematics;
 
 public class Enemy : MonoBehaviour {
 
@@ -11,6 +12,7 @@ public class Enemy : MonoBehaviour {
 	public LayerMask turnLayerMask;
 	private Rigidbody2D rb;
 	public EnemyDrop drop;
+	[SerializeField] public GameObject damageFloat;
 
 	private bool facingRight = true;
 	
@@ -73,6 +75,8 @@ public class Enemy : MonoBehaviour {
 		if (!isInvincible) 
 		{
 			transform.GetComponent<Animator>().SetBool("Hit", true);
+			GameObject gb  = Instantiate(damageFloat,gameObject.transform.position,quaternion.identity) as GameObject;
+			gb.transform.GetChild(0).GetComponent<TextMesh>().text = damage.ToString();
 			float direction = damage / Mathf.Abs(damage);
 			damage = Mathf.Abs(damage);
 			life -= damage;

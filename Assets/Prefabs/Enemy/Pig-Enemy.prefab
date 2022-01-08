@@ -56,6 +56,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 513
   drop: {fileID: 0}
+  damageFloat: {fileID: 8622090922082411199, guid: f2cd513570b0cd144a85dcbc46a13202, type: 3}
   speed: 5
   isInvincible: 0
 --- !u!212 &8819646730259532013
