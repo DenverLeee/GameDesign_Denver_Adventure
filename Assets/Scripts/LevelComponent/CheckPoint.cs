@@ -36,7 +36,7 @@ public class CheckPoint : MonoBehaviour
     IEnumerator WaitToGoNext()
     {
         yield return new WaitForSeconds(0.3f);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
 
