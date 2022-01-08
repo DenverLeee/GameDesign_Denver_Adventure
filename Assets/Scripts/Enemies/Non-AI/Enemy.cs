@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour {
 	private Transform wallCheck;
 	public LayerMask turnLayerMask;
 	private Rigidbody2D rb;
+	public EnemyDrop drop;
 
 	private bool facingRight = true;
 	
@@ -21,6 +22,7 @@ public class Enemy : MonoBehaviour {
 	void Awake () {
 		fallCheck = transform.Find("FallCheck");
 		wallCheck = transform.Find("WallCheck");
+		drop = GetComponent<EnemyDrop>();
 		rb = GetComponent<Rigidbody2D>();
 	}
 	
@@ -111,6 +113,7 @@ public class Enemy : MonoBehaviour {
 		yield return new WaitForSeconds(0);
 		rb.velocity = new Vector2(0, rb.velocity.y);
 		yield return new WaitForSeconds(0.25f);
-		Destroy(gameObject);
+		drop.getOrange();
+		// Destroy(gameObject);
 	}
 }
