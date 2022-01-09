@@ -46,6 +46,6 @@ public class DestructibleObject : MonoBehaviour
 	{
 		transform.GetComponent<Animator>().SetTrigger("Hit");
 		life -= 1;
-		shakeDuration = 0.1f;
+		// shakeDuration = 0.1f;
 	}
 }
