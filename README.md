@@ -1,2 +1,2 @@
-# FinalGameDesign_Non_NTTD
-(SWE303~DMT &amp; SWE305) 2D Platform Game Design New Project
+# GameDesign_Denver_Adventure
+2D Platform Breakout Game based on Unity
