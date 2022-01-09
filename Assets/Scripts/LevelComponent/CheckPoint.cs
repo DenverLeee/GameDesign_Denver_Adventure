@@ -16,7 +16,7 @@ public class CheckPoint : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (OrangeUI.currentOrangeNumber >= 1)
+        if (OrangeUI.currentOrangeNumber >= 20)
         {
             animator.SetTrigger("NextLevel");
             canGoNext = true;
