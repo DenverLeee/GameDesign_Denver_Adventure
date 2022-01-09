@@ -55,7 +55,7 @@ MonoBehaviour:
   turnLayerMask:
     serializedVersion: 2
     m_Bits: 1
-  drop: {fileID: 0}
+  drop: {fileID: 7907223506353695166}
   damageFloat: {fileID: 8622090922082411199, guid: f2cd513570b0cd144a85dcbc46a13202, type: 3}
   speed: 5
   isInvincible: 0
