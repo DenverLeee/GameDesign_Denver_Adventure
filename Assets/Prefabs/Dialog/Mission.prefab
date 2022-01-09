@@ -95,10 +95,10 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2854169184428161355}
-  m_Text: 'It Seems I need to collect ? orange to move on
+  m_Text: 'It Seems I need to collect 20 orange to move on
 
-    The pigs seem to be
-    the enemy
+    The pigs seem to
+    be the enemy
 
     I need to defeat them'
   m_OffsetZ: 0

@@ -47,6 +47,6 @@ public class LevelNavigator : MonoBehaviour
 
     public void LeadToStoryLevel()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(5);
     }
 }
