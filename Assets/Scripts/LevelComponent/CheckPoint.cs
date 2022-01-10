@@ -28,7 +28,6 @@ public class CheckPoint : MonoBehaviour
         if (other.gameObject.CompareTag("Player") && canGoNext)
         {
             CharacterController2D.animator.SetBool("CanGoNext",true);
-            CharacterController2D.canMove = false;
             StartCoroutine(WaitToGoNext());
         }
     }

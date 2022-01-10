@@ -498,8 +498,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "I suddenly crossed over into this wonderful world at 4.20pm today. \nI
-    need to collect enough oranges to open the door to the next level until I return
-    home. No one can stop me from going back!"
+    need to collect enough oranges \nto open the door to the next level \nuntil I
+    return home. \nNo one can stop me from going back!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

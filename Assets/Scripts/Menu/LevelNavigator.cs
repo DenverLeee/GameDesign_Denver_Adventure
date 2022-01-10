@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -11,10 +12,14 @@ public class LevelNavigator : MonoBehaviour
     private void Awake()
     {
         // reset menu components activity
-        Cursor.visible = true;
         if (!mainMenu || !levelMenu) return;
         mainMenu.SetActive(true);
         levelMenu.SetActive(false);
+    }
+
+    private void Update()
+    {
+        Cursor.visible = true;
     }
 
     public void PlayGame()
